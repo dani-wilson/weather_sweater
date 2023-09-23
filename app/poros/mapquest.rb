@@ -1,0 +1,3 @@
+class Mapquest
+  
+end
