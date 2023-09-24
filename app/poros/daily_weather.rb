@@ -4,7 +4,7 @@ class DailyWeather
                 :sunset,
                 :max_temp,
                 :min_temp,
-                :daily_condition,
+                :daily_conditions,
                 :daily_icon
 
   def initialize(daily_weather_data)
