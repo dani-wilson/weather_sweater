@@ -1,13 +1,5 @@
 class WeatherFacade
   class << self
-    # def weather(location)
-    #   data = {
-    #     current_weather: current_weather(location),
-    #     daily_weather: daily_weather(location),
-    #     hourly_weather: hourly_weather(location)
-    #   }
-    #   Forecast.new(data, location)
-    # end
 
     def current_weather(coordinates)
       current_weather_data = get_location_data(coordinates)
@@ -25,7 +17,18 @@ class WeatherFacade
     end
 
     def daily_weather
+      require 'pry'; binding.pry
+      get_location_data(coordinates)[:daily]
+      # data = {
+      #   date: daily_weather_data
+      #   sunrise:
+      #   sunset:
+      #   max_temp:
+      #   min_temp:
+      #   daily_conditions:
+      #   daily_icon:
 
+      # }
     end
 
     def hourly_weather
