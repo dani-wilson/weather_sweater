@@ -18,6 +18,7 @@ class WeatherService
 
       response = conn.get 'forecast.json' do |req|
         req.params[:q] = format_lat_lon
+        req.params[:days] = 5
       end
       get_json(response)
     end
