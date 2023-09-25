@@ -10,7 +10,20 @@ class OpenlibrarySerializer
           "id": "null",
           "type": "books",
           "attributes": {
-            "destination": info
+            "destination": info.destination,
+            "forecast": {
+              "summary": info.summary,
+              "temperature": info.temperature
+            },
+            "total_books_found": info.total_books_found,
+            "books": [
+              {
+                "isbn": [
+          info.isbn
+                ],
+                "title": info.title
+              }
+            ]
           }
         }
       end
