@@ -17,7 +17,6 @@ RSpec.describe OpenlibrarySerializer do
 
         expect(info).to have_key(:id)
         expect(info[:id]).to eq("null")
-
         expect(info).to have_key(:attributes)
         expect(info[:attributes]).to be_a(Hash)
         expect(info[:attributes]).to have_key(:destination)
