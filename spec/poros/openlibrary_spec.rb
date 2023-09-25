@@ -4,11 +4,10 @@ RSpec.describe OpenLibrary do
   it "exists and has attributes" do
     data = {
       "destination": "Denver, Co",
+      "summary": "Cloudy",
+      "temperature": "87.1",
       "total_books_found": "772",
-      "isbn": [
-        "0762507845",
-        "9780762507849"
-      ],
+      "isbn": ["0762507845", "9780762507849"],
       "title": "Denver, CO"
     }
 
@@ -23,6 +22,10 @@ RSpec.describe OpenLibrary do
     expect(book_info.isbn).to eq(["0762507845", "9780762507849"])
     expect(book_info.title).to eq("Denver, CO")
     expect(book_info.title).to be_a(String)
+    expect(book_info.summary).to eq("Cloudy")
+    expect(book_info.summary).to be_a(String)
+    expect(book_info.temperature).to eq(87.1)
+    expect(book_info.temperature).to be_a(Float)
   end
 end
 
