@@ -12,6 +12,32 @@ RSpec.describe "Mapquest Service API", :vcr do
         expect(response[:results][0][:locations][0][:latLng][:lat]).to be_a(Float)
         expect(response[:results][0][:locations][0][:latLng][:lng]).to be_a(Float)
       end
+
+      it "testing endpoint" do
+        params = {
+          location: 'denver,co'
+        }
+    
+        headers = {
+          'content-type': 'application/json',
+          'Accept': 'application/json'
+        }
+    
+        get '/api/v0/forecast', headers: headers, params: params
+
+        expect(response).to be_successful
+        expect(response.status).to eq(200)
+        parsed = JSON.parse(response.body, symbolize_names: true)
+        expect(parsed).to have_key(:data)
+        expect(parsed[:data]).to have_key(:id)
+        expect(parsed[:data][:id]).to eq(nil)
+        expect(parsed[:data]).to have_key(:attributes)
+        expect(parsed[:data][:attributes]).to have_key(:current_weather)
+        expect(parsed[:data][:attributes][:current_weather]).to have_key(:last_updated)
+        expect(parsed[:data][:attributes][:current_weather][:last_updated]).to be_a(String)
+        expect(parsed[:data][:attributes][:current_weather]).to have_key(:current_temperature)
+        expect(parsed[:data][:attributes][:current_weather][:current_temperature]).to be_a(Float)
+      end
     end
   end
 end
