@@ -16,23 +16,30 @@ class WeatherFacade
       CurrentWeather.new(data)
     end
 
-    def daily_weather
-      require 'pry'; binding.pry
-      get_location_data(coordinates)[:daily]
-      # data = {
-      #   date: daily_weather_data
-      #   sunrise:
-      #   sunset:
-      #   max_temp:
-      #   min_temp:
-      #   daily_conditions:
-      #   daily_icon:
-
-      # }
+    def daily_weather(coordinates)
+      get_location_data(coordinates)[:forecast][:forecastday].map do |forecast|
+      data = {
+        date: forecast[:date]
+        sunrise: forecast[:astro][:sunrise]
+        sunset: forecast[:astro][:sunrise]
+        max_temp: forecast[:day][:maxtemp_f]
+        min_temp: forecast[:day][:mintemp_f]
+        daily_conditions: forecast[:day][:conditions][:text]
+        daily_icon: forecast[:day][:conditions][:icon]
+      }
+      DailyWeather.new(data)
     end
 
-    def hourly_weather
-
+    def hourly_weather(coordinates)
+      get_location_data(coordinates)[:forecast][:forecastday][0].map do |forecast|
+        forecast[1][1].map do |times|
+        data = {
+          time: times[3][:time]
+          temperature: times[3][:temp_f]
+          conditions: times[3][:condition][:text]
+          icon: times[3][:condition][:icon]
+        }
+      end
     end
 
     def get_location_data(coordinates)
