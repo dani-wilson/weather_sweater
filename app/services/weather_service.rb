@@ -22,5 +22,12 @@ class WeatherService
       end
       get_json(response)
     end
+
+    def forecast_by_location(location)
+      response = conn.get 'forecast.json' do |req|
+        req.params[:q] = location
+      end
+      get_json(response)
+    end
   end
 end
