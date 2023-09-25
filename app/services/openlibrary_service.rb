@@ -11,7 +11,7 @@ class OpenlibraryService
     def book_search(location, quantity)
       response = conn.get '/search.json' do |req|
         req.params[:q] = location
-        req.params[:quantity] = quantity
+        req.params[:limit] = quantity
       end
       get_json(response)
     end
