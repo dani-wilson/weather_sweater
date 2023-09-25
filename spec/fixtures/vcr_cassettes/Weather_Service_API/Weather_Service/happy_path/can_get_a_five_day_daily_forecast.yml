@@ -1,0 +1,114 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=mapquest_key&location=Cincinatti,%20Oh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 24 Sep 2023 22:45:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '806'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14980'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14980'
+      Ratelimit-Reset:
+      - '2092444'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 1ff06180-5b2c-11ee-88fb-5d30dc24e6e2
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"326-2rYNWnariuvUMbTshEtr8pwMzFs"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJDaW5jaW5hdHRpLCBPaCJ9LCJsb2NhdGlvbnMiOlt7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiJDaW5jaW5uYXRpIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkhhbWlsdG9uIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiT0giLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEJYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjM5LjEwNzEzLCJsbmciOi04NC41MDQxM30sImRpc3BsYXlMYXRMbmciOnsibGF0IjozOS4xMDcxMywibG5nIjotODQuNTA0MTN9LCJtYXBVcmwiOiIifV19XX0=
+  recorded_at: Sun, 24 Sep 2023 22:45:57 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/forecast.json?days=5&key=weather_key
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Sun, 24 Sep 2023 22:46:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-718
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '347374584'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/24/2023 22:46:45'
+      Cdn-Edgestorageid:
+      - '894'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - 49f86a23060b1b7ac7beefea795ab0cb
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1003,"message":"Parameter q is missing."}}'
+  recorded_at: Sun, 24 Sep 2023 22:46:45 GMT
+recorded_with: VCR 6.2.0
