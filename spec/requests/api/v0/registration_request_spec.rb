@@ -3,7 +3,6 @@ require "rails_helper"
 RSpec.describe "Registration Requests", :vcr do
   describe "happy path" do
     it "can register a new user" do
-      
       params = {
         "email": "dillpickles@gmail.com",
         "password": "password",
@@ -64,13 +63,12 @@ RSpec.describe "Registration Requests", :vcr do
         "password": "password1",
         "password_confirmation": "password12"
       }
-
       headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
-
+      
       body = JSON.generate(params)
-  
+      
       post '/api/v0/users', headers: headers, params: body
-
+      
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
 
