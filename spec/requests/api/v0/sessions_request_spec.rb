@@ -3,7 +3,17 @@ require "rails_helper"
 RSpec.describe "creating a user session", :vcr do
   describe "happy path" do
     it "can log in" do
-      User.create!(email: "newsession@gmail.com", password: 'password1', password_confirmation: 'password1')
+      params = {
+        "email": "newsession@gmail.com",
+        "password": "password1",
+        "password_confirmation": "password1"
+      }
+
+      headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+
+      body = JSON.generate(params)
+  
+      post '/api/v0/users', headers: headers, params: body
 
       params = {
         "email": "newsession@gmail.com",
