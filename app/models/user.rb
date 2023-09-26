@@ -1,3 +1,5 @@
 class User < ApplicationRecord
-  validates_presence_of :email, :password, :password_confirmation
+  validates :email, uniqueness: true, presence: true
+  validates :password, presence: { require: true }
+  validates :password_confirmation, presence: { require: true }
 end
