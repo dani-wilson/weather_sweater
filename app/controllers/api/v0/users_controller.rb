@@ -1,6 +1,6 @@
 class Api::V0::UsersController < ApplicationController
   def create
-    if !params[:email] || !params[:password] || !params[:password_confirmation]
+    if params[:email].blank? || params[:password].blank? || params[:password_confirmation].blank?
       render json: { 'error': 'Missing required information: Fields cannot be blank' }, status: :bad_request
     elsif User.exists?(email: params[:email])
       render json: { 'error': 'An account with this email already exists' }, status: :bad_request
