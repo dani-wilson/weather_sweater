@@ -1,5 +1,6 @@
 class WeatherService
   class << self
+
   def conn
     Faraday.new(url: "http://api.weatherapi.com/v1") do |f|
       f.params[:key] = Rails.application.credentials.weather[:api_key]
@@ -21,6 +22,13 @@ class WeatherService
         req.params[:days] = 5
       end
       get_json(response)
+    end
+
+    def weather_by_eta(end_city, eta)
+      response = conn.get 'future.json' do |req|
+        req.params[:q] = end_city
+        req.params[:dt] = eta
+      end
     end
   end
 end
