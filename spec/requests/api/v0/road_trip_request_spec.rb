@@ -33,7 +33,6 @@ RSpec.describe "Road Trip Request Spec", :vcr do
       expect(parsed[:data][:attributes]).to have_key(:travel_time)
       expect(parsed[:data][:attributes][:travel_time]).to eq("14 H 55 m")
       expect(parsed[:data][:attributes]).to have_key(:weather_at_eta)
-      # require 'pry'; binding.pry
     end
 
     it "sad path - invalid api key" do
@@ -59,7 +58,7 @@ RSpec.describe "Road Trip Request Spec", :vcr do
     it "sad path - impossible route" do
       params = {
         "origin": "Vernal,UT",
-        "destination": "London",
+        "destination": "Honolulu",
         "api_key": "cMni51x6XDi5K3UN5vHuPTwU"
       }
 
@@ -70,7 +69,6 @@ RSpec.describe "Road Trip Request Spec", :vcr do
       post '/api/v0/road_trip', headers: headers, params: body
 
       parsed = JSON.parse(response.body, symbolize_names: true)
-
       expect(parsed[:data][:attributes][:weather_at_eta]).to eq("impossible")
       expect(parsed[:data][:attributes][:travel_time]).to eq(nil)
     end
