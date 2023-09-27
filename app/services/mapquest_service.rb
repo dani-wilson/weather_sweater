@@ -16,5 +16,13 @@ class MapquestService
       end
       get_json(response)
     end
+
+    def estimated_time(origin, destination)
+      response = conn.get '/directions/v2/routematrix' do |req|
+        req.params[:from] = origin
+        req.params[:to] = destination
+      end
+      get_json(response)
+    end
   end
 end
