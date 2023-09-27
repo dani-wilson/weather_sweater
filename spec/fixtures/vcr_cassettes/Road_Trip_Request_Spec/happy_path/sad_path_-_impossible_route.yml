@@ -228,4 +228,409 @@ http_interactions:
       string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
         format and between 14 days and 300 days from today in the future."}}'
   recorded_at: Wed, 27 Sep 2023 03:26:51 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=2023-10-10&key=weather_key&q=London
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:04:42 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '138'
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-1067
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '665748613'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 04:04:42'
+      Cdn-Edgestorageid:
+      - '1068'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - 74ab97408a6afff62a319e38222278c1
+      Cdn-Cache:
+      - EXPIRED
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 04:04:42 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=2023-10-10&key=weather_key&q=Salt%20Lake%20City
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:05:54 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '138'
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-940
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '647530374'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 04:05:54'
+      Cdn-Edgestorageid:
+      - '1068'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - a5baa602c680fb91f91d8b738123fe31
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 04:05:54 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=2023-10-10&key=weather_key&q=Salt%20Lake%20City
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:06:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '138'
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-1068
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '783516254'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 04:06:45'
+      Cdn-Edgestorageid:
+      - '1068'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - 352e2f4f3914a9aad9a8ae713b47c801
+      Cdn-Cache:
+      - EXPIRED
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 04:06:45 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/routematrix?from=Vernal,UT&key=mapquest_key&to=Honolulu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:10:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1271'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14863'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14863'
+      Ratelimit-Reset:
+      - '1900193'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - be1ee5f0-5ceb-11ee-be4e-af8e498a33bd
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"4f7-4cHxP4ndRP0Ibtgk0WpRmwn5q+M"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjYwMiwiY29weXJpZ2h0Ijp7InRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsImltYWdlQWx0VGV4dCI6IsKpIDIwMjMgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiTm8gcm91dGVzIGZvdW5kLiJdfSwidGltZSI6WzAsMF0sImRpc3RhbmNlIjpbMCwwXSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiVmVybmFsIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IlVpbnRhaCIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IlVUIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0Ijo0MC40NTU3MiwibG5nIjotMTA5LjUyODg0fSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjQwLjQ1NTcyLCJsbmciOi0xMDkuNTI4ODR9LCJtYXBVcmwiOiIifSx7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiJIb25vbHVsdSIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJIb25vbHVsdSIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkhJIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjoyMS4zMDQ5MywibG5nIjotMTU3Ljg1Nzg4fSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjIxLjMwNDkzLCJsbmciOi0xNTcuODU3ODh9LCJtYXBVcmwiOiIifV0sImFsbFRvQWxsIjpmYWxzZSwibWFueVRvT25lIjpmYWxzZX0=
+  recorded_at: Wed, 27 Sep 2023 04:10:07 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/routematrix?from=Vernal,UT&key=mapquest_key&to=Honolulu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:10:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1271'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14861'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14861'
+      Ratelimit-Reset:
+      - '1900192'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - bed11ef0-5ceb-11ee-932b-bb2bad751a92
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"4f7-4cHxP4ndRP0Ibtgk0WpRmwn5q+M"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjYwMiwiY29weXJpZ2h0Ijp7InRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsImltYWdlQWx0VGV4dCI6IsKpIDIwMjMgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiTm8gcm91dGVzIGZvdW5kLiJdfSwidGltZSI6WzAsMF0sImRpc3RhbmNlIjpbMCwwXSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiVmVybmFsIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IlVpbnRhaCIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IlVUIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0Ijo0MC40NTU3MiwibG5nIjotMTA5LjUyODg0fSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjQwLjQ1NTcyLCJsbmciOi0xMDkuNTI4ODR9LCJtYXBVcmwiOiIifSx7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiJIb25vbHVsdSIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJIb25vbHVsdSIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkhJIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjoyMS4zMDQ5MywibG5nIjotMTU3Ljg1Nzg4fSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjIxLjMwNDkzLCJsbmciOi0xNTcuODU3ODh9LCJtYXBVcmwiOiIifV0sImFsbFRvQWxsIjpmYWxzZSwibWFueVRvT25lIjpmYWxzZX0=
+  recorded_at: Wed, 27 Sep 2023 04:10:08 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=2023-10-10&key=weather_key&q=Honolulu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:10:09 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-718
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '578095232'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 04:10:09'
+      Cdn-Edgestorageid:
+      - '871'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - 0b2a06efd2f1af25679afc9b7cd98a7d
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 04:10:09 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/routematrix?from=Vernal,UT&key=mapquest_key&to=Honolulu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:20:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1271'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14857'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14857'
+      Ratelimit-Reset:
+      - '1899589'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 25c9c9d0-5ced-11ee-932b-bb2bad751a92
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"4f7-4cHxP4ndRP0Ibtgk0WpRmwn5q+M"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjYwMiwiY29weXJpZ2h0Ijp7InRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsImltYWdlQWx0VGV4dCI6IsKpIDIwMjMgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiTm8gcm91dGVzIGZvdW5kLiJdfSwidGltZSI6WzAsMF0sImRpc3RhbmNlIjpbMCwwXSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiVmVybmFsIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IlVpbnRhaCIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IlVUIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0Ijo0MC40NTU3MiwibG5nIjotMTA5LjUyODg0fSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjQwLjQ1NTcyLCJsbmciOi0xMDkuNTI4ODR9LCJtYXBVcmwiOiIifSx7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiJIb25vbHVsdSIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJIb25vbHVsdSIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkhJIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjoyMS4zMDQ5MywibG5nIjotMTU3Ljg1Nzg4fSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjIxLjMwNDkzLCJsbmciOi0xNTcuODU3ODh9LCJtYXBVcmwiOiIifV0sImFsbFRvQWxsIjpmYWxzZSwibWFueVRvT25lIjpmYWxzZX0=
+  recorded_at: Wed, 27 Sep 2023 04:20:11 GMT
 recorded_with: VCR 6.2.0
