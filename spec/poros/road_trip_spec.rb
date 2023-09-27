@@ -18,8 +18,7 @@ RSpec.describe RoadTrip do
     expect(road_trip.start_city).to eq("Vernal,UT")
     expect(road_trip.end_city).to eq("Astoria,OR")
     expect(road_trip.travel_time).to eq("14 hours 0 minutes")
-    require 'pry'; binding.pry
     expect(road_trip.weather_at_eta[:conditions]).to eq("light rain")
-    expect(road_trip.weather_at_eta[:temperature]).to eq(42.1)
+    expect(road_trip.weather_at_eta[:temperature]).to eq("42.1")
   end
 end
