@@ -241,4 +241,558 @@ http_interactions:
       string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
         format and between 14 days and 300 days from today in the future."}}'
   recorded_at: Wed, 27 Sep 2023 00:44:18 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=10/13/2170&key=weather_key&q=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 01:55:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-845
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '607029046'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 01:55:31'
+      Cdn-Edgestorageid:
+      - '845'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - 1dac4df7806eb814efd850fd9ecbc252
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 01:55:31 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=2170/10/13&key=weather_key&q=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 02:55:20 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '138'
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-1067
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '631964575'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 02:55:20'
+      Cdn-Edgestorageid:
+      - '940'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - 72be7c9561d7ec2fa50975f04ded8128
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 02:55:20 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/routematrix?from=Vernal,UT&key=mapquest_key&to=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 02:56:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1261'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14871'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14871'
+      Ratelimit-Reset:
+      - '1904592'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 7ff0d270-5ce1-11ee-932b-bb2bad751a92
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"4ed-OQf7yTfBbrz6ZDQ+Z0gvspXtOho"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDUzNzA4XSwiZGlzdGFuY2UiOlswLDEwMjYuNjIzM10sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IlZlcm5hbCIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJVaW50YWgiLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJVVCIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6NDAuNDU1NzIsImxuZyI6LTEwOS41Mjg4NH0sImRpc3BsYXlMYXRMbmciOnsibGF0Ijo0MC40NTU3MiwibG5nIjotMTA5LjUyODg0fSwibWFwVXJsIjoiIn0seyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiQXN0b3JpYSIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJDbGF0c29wIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiT1IiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjQ2LjE4OTc3LCJsbmciOi0xMjMuODMzOTV9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NDYuMTg5NzcsImxuZyI6LTEyMy44MzM5NX0sIm1hcFVybCI6IiJ9XSwiYWxsVG9BbGwiOmZhbHNlLCJtYW55VG9PbmUiOmZhbHNlfQ==
+  recorded_at: Wed, 27 Sep 2023 02:56:48 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/routematrix?from=Vernal,UT&key=mapquest_key&to=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 02:57:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1261'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14866'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14866'
+      Ratelimit-Reset:
+      - '1904575'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 89d99880-5ce1-11ee-a8e5-5f2f1f539db4
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"4ed-OQf7yTfBbrz6ZDQ+Z0gvspXtOho"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDUzNzA4XSwiZGlzdGFuY2UiOlswLDEwMjYuNjIzM10sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IlZlcm5hbCIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJVaW50YWgiLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJVVCIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6NDAuNDU1NzIsImxuZyI6LTEwOS41Mjg4NH0sImRpc3BsYXlMYXRMbmciOnsibGF0Ijo0MC40NTU3MiwibG5nIjotMTA5LjUyODg0fSwibWFwVXJsIjoiIn0seyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiQXN0b3JpYSIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJDbGF0c29wIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiT1IiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjQ2LjE4OTc3LCJsbmciOi0xMjMuODMzOTV9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NDYuMTg5NzcsImxuZyI6LTEyMy44MzM5NX0sIm1hcFVybCI6IiJ9XSwiYWxsVG9BbGwiOmZhbHNlLCJtYW55VG9PbmUiOmZhbHNlfQ==
+  recorded_at: Wed, 27 Sep 2023 02:57:05 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=2023/10/10&key=weather_key&q=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 02:57:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-718
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '629641096'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 02:57:20'
+      Cdn-Edgestorageid:
+      - '1070'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - 710db7f0e51eada579dfe2d60856192b
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 02:57:20 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=2023/09/27&key=weather_key&q=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:03:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '138'
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-1069
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 haproxy-api-1 (Varnish/7.3)
+      X-Varnish:
+      - '1798570446'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 03:03:23'
+      Cdn-Edgestorageid:
+      - '940'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - 22cb250f42d2ef227c58dc2ff7ff078b
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 03:03:23 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=2023-09-27&key=weather_key&q=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:05:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-894
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '778666275'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 03:05:06'
+      Cdn-Edgestorageid:
+      - '1070'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - 65562116becc3518e77b6c3ec1478fc5
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 03:05:06 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=2023-10-11&key=weather_key&q=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:07:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-941
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 haproxy-api-1 (Varnish/7.3)
+      X-Varnish:
+      - '1800766612'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '09/27/2023 03:07:31'
+      Cdn-Edgestorageid:
+      - '940'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 21ad584512246176867a9796fb1509fe
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Astoria","region":"Oregon","country":"United States
+        of America","lat":46.19,"lon":-123.83,"tz_id":"America/Los_Angeles","localtime_epoch":1695784049,"localtime":"2023-09-26
+        20:07"},"forecast":{"forecastday":[{"date":"2023-10-11","day":{"maxtemp_f":58.2,"mintemp_f":47.0,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/day/356.png"}},"astro":{"sunrise":"07:27
+        AM","sunset":"06:36 PM"},"hour":[{"time":"2023-10-11 00:00","temp_f":48.5,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-10-11
+        03:00","temp_f":47.8,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-10-11
+        06:00","temp_f":48.7,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-10-11
+        09:00","temp_f":53.9,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-10-11
+        12:00","temp_f":56.9,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-10-11
+        15:00","temp_f":57.4,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-10-11
+        18:00","temp_f":52.0,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-10-11
+        21:00","temp_f":49.5,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}}]}]}}'
+  recorded_at: Wed, 27 Sep 2023 03:07:31 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=2023-10-10&key=weather_key&q=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 03:11:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '138'
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-1069
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 haproxy-api-1 (Varnish/7.3)
+      X-Varnish:
+      - '1797326754'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 03:11:49'
+      Cdn-Edgestorageid:
+      - '1068'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - 8e763c19ee469a03be6efb7876daabbb
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 03:11:49 GMT
 recorded_with: VCR 6.2.0

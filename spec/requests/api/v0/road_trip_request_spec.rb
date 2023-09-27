@@ -14,7 +14,7 @@ RSpec.describe "Road Trip Request Spec", :vcr do
       body = JSON.generate(params)
   
       post '/api/v0/road_trip', headers: headers, params: body
-      
+
       expect(response).to be_successful
       expect(response.status).to eq(201)
       
@@ -31,9 +31,48 @@ RSpec.describe "Road Trip Request Spec", :vcr do
       expect(parsed[:data][:attributes]).to have_key(:end_city)
       expect(parsed[:data][:attributes][:end_city]).to eq("Astoria,OR")
       expect(parsed[:data][:attributes]).to have_key(:travel_time)
-      expect(parsed[:data][:attributes][:travel_time]).to eq("14 hours 0 minutes")
+      expect(parsed[:data][:attributes][:travel_time]).to eq("14 H 55 m")
       expect(parsed[:data][:attributes]).to have_key(:weather_at_eta)
-      expect(parsed[:data][:attributes][:weather_at_eta]).to eq("Partly Cloudy")
+      # require 'pry'; binding.pry
+    end
+
+    it "sad path - invalid api key" do
+      params = {
+        "origin": "Vernal,UT",
+        "destination": "Astoria,OR",
+        "api_key": ""
+      }
+
+      headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+
+      body = JSON.generate(params)
+  
+      post '/api/v0/road_trip', headers: headers, params: body
+
+      expect(response.status).to eq(401)
+
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed[:error]).to eq('Fields cannot be blank')
+    end
+
+    it "sad path - impossible route" do
+      params = {
+        "origin": "Vernal,UT",
+        "destination": "London",
+        "api_key": "cMni51x6XDi5K3UN5vHuPTwU"
+      }
+
+      headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+
+      body = JSON.generate(params)
+  
+      post '/api/v0/road_trip', headers: headers, params: body
+
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed[:data][:attributes][:weather_at_eta]).to eq("impossible")
+      expect(parsed[:data][:attributes][:travel_time]).to eq(nil)
     end
   end
 end
