@@ -1,0 +1,244 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/routematrix?from=Vernal,UT&key=mapquest_key&to=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Sep 2023 23:03:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1261'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14884'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14884'
+      Ratelimit-Reset:
+      - '1918562'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - f9335070-5cc0-11ee-a8e5-5f2f1f539db4
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"4ed-OQf7yTfBbrz6ZDQ+Z0gvspXtOho"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDUzNzA4XSwiZGlzdGFuY2UiOlswLDEwMjYuNjIzM10sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IlZlcm5hbCIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJVaW50YWgiLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJVVCIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6NDAuNDU1NzIsImxuZyI6LTEwOS41Mjg4NH0sImRpc3BsYXlMYXRMbmciOnsibGF0Ijo0MC40NTU3MiwibG5nIjotMTA5LjUyODg0fSwibWFwVXJsIjoiIn0seyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiQXN0b3JpYSIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJDbGF0c29wIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiT1IiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjQ2LjE4OTc3LCJsbmciOi0xMjMuODMzOTV9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NDYuMTg5NzcsImxuZyI6LTEyMy44MzM5NX0sIm1hcFVybCI6IiJ9XSwiYWxsVG9BbGwiOmZhbHNlLCJtYW55VG9PbmUiOmZhbHNlfQ==
+  recorded_at: Tue, 26 Sep 2023 23:03:58 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/routematrix?from=Vernal,UT&key=mapquest_key&to=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Sep 2023 23:03:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1261'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14886'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14886'
+      Ratelimit-Reset:
+      - '1918561'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - f9bd8f10-5cc0-11ee-be4e-af8e498a33bd
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"4ed-OQf7yTfBbrz6ZDQ+Z0gvspXtOho"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDUzNzA4XSwiZGlzdGFuY2UiOlswLDEwMjYuNjIzM10sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IlZlcm5hbCIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJVaW50YWgiLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJVVCIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6NDAuNDU1NzIsImxuZyI6LTEwOS41Mjg4NH0sImRpc3BsYXlMYXRMbmciOnsibGF0Ijo0MC40NTU3MiwibG5nIjotMTA5LjUyODg0fSwibWFwVXJsIjoiIn0seyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiQXN0b3JpYSIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJDbGF0c29wIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiT1IiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjQ2LjE4OTc3LCJsbmciOi0xMjMuODMzOTV9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NDYuMTg5NzcsImxuZyI6LTEyMy44MzM5NX0sIm1hcFVybCI6IiJ9XSwiYWxsVG9BbGwiOmZhbHNlLCJtYW55VG9PbmUiOmZhbHNlfQ==
+  recorded_at: Tue, 26 Sep 2023 23:03:59 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=10/10/2023&key=weather_key&q=Vernal,UT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Sep 2023 23:03:59 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1411'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-1070
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '542574332'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '09/26/2023 23:03:59'
+      Cdn-Edgestorageid:
+      - '871'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - ddb76d2112dd4d83462071ba627661c3
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"location":{"name":"Vernal","region":"Utah","country":"United States
+        of America","lat":40.46,"lon":-109.53,"tz_id":"America/Denver","localtime_epoch":1695769438,"localtime":"2023-09-26
+        17:03"},"forecast":{"forecastday":[{"date":"2023-10-10","day":{"maxtemp_f":60.1,"mintemp_f":40.9,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/day/299.png"}},"astro":{"sunrise":"07:24
+        AM","sunset":"06:46 PM"},"hour":[{"time":"2023-10-10 00:00","temp_f":46.5,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-10-10
+        03:00","temp_f":44.1,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-10-10
+        06:00","temp_f":41.6,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-10-10
+        09:00","temp_f":47.6,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-10-10
+        12:00","temp_f":55.8,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-10-10
+        15:00","temp_f":59.5,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-10-10
+        18:00","temp_f":55.9,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-10-10
+        21:00","temp_f":50.4,"condition":{"text":"","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}}]}]}}'
+  recorded_at: Tue, 26 Sep 2023 23:03:59 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/future.json?dt=10/10/2023&key=weather_key&q=Astoria,OR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 00:44:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-718
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '572559248'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '400'
+      Cdn-Cachedat:
+      - '09/27/2023 00:44:18'
+      Cdn-Edgestorageid:
+      - '1068'
+      Cdn-Status:
+      - '400'
+      Cdn-Requestid:
+      - e354bb7aa9889ac8e9c9aae6e14550bf
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"error":{"code":1009,"message":"dt parameter should be in yyyy-MM-dd
+        format and between 14 days and 300 days from today in the future."}}'
+  recorded_at: Wed, 27 Sep 2023 00:44:18 GMT
+recorded_with: VCR 6.2.0
