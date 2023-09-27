@@ -6,7 +6,8 @@ class RoadTripFacade
         start_city: start_city,
         end_city: end_city,
         travel_time: travel_time(start_city, end_city),
-        weather_at_eta: future_weather(start_city, end_city)
+        weather_at_eta: future_weather(start_city, end_city),
+        
       }
       RoadTrip.new(data)
     end
@@ -25,7 +26,6 @@ class RoadTripFacade
           temperature: parsed[:forecast][:forecastday][0][:day][:maxtemp_f],
           conditions: parsed[:forecast][:forecastday][0][:day][:condition][:text]
         }
-        RoadTrip.new(data)
       else 
         return 'impossible'
       end
