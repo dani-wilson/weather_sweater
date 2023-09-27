@@ -38,6 +38,17 @@ RSpec.describe "Mapquest Service API", :vcr do
         expect(parsed[:data][:attributes][:current_weather]).to have_key(:current_temperature)
         expect(parsed[:data][:attributes][:current_weather][:current_temperature]).to be_a(Float)
       end
+
+      it "can get the required travel time for a roadtrip" do
+        response = MapquestService.estimated_time("Vernal,UT", "Astoria,OR")
+
+        expect(response).to have_key(:info)
+        expect(response).to have_key(:distance)
+        expect(response[:distance][1].round).to eq(1027)
+        expect(response[:time][1]).to be_an(Integer)
+        expect(response).to have_key(:locations)
+        expect(response[:locations][0][:adminArea5]).to eq("Vernal")
+      end
     end
   end
 end
